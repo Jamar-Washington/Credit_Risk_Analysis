@@ -50,7 +50,6 @@ The next model is an undersampling model called the **ClusterCentroids Model**. 
   * "High Risk": precision rate - 1%, recall rate - 67%
   * "Low Risk:"  precision rate - 100%, recall rate - 39%
 
-
 ### Combination Sampling
 
 **(Synthetic Minority Oversampling Technique + Edited NearestNeighbors) Model** (SMOTEENN) combines aspects of both oversampling and undersampling.
@@ -60,5 +59,24 @@ The next model is an undersampling model called the **ClusterCentroids Model**. 
   * Balanced Accuracy score - 64.9%.
   * "High Risk": precision rate - 1%, recall rate - 74%
   * "Low Risk:"  precision rate - 100%, recall rate - 56% 
+
+The next two models do not use over or undersampling. The first is the **BalancedRandomForestClassifier Model**, which creates two trees of equal size to the minority class are constructed to represent one for the majority class and one for the minority class. 
+
+![balance](https://user-images.githubusercontent.com/109183214/206367720-e42ef1b2-8467-4c66-a970-f00856e3da53.png)
+
+  * Balanced Accuracy score - 78.7%.
+  * "High Risk": precision rate - 4%, recall rate - 67%
+  * "Low Risk:"  precision rate - 100%, recall rate - 91% 
+
+![feature](https://user-images.githubusercontent.com/109183214/206369279-5e8160da-8220-46cc-9cb0-ff3bfa1b4a39.png)
+when sorting the feautres by importance, total_rec_prncp is the most important feature at 73.7%
+
+The other is the **EasyEnsembleClassifier Model**.
+
+![adaboost](https://user-images.githubusercontent.com/109183214/206367712-2d8eb6b8-80d5-4098-aa42-1165480cd0f7.png)
+
+  * Balanced Accuracy score - 92.5%.
+  * "High Risk": precision rate - 7%, recall rate - 91%
+  * "Low Risk:"  precision rate - 100%, recall rate - 94% 
 
 
