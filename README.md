@@ -14,7 +14,7 @@ The purpose of this project is to understand how to utilize Machine Learning alg
 
 * Jupyter Notebook
 
-# Results
+## Results
 
 To balance out the data, resampling is done using Python's **scikit-learn** and **imbalanced-learn** libraries to evaluate the results and provide a comparison for the analysis.
 
@@ -79,4 +79,5 @@ The other is the **EasyEnsembleClassifier Model**.
   * "High Risk": precision rate - 7%, recall rate - 91%
   * "Low Risk:"  precision rate - 100%, recall rate - 94% 
 
-
+## Summary
+After reviewing all six models, the EasyEnsembleClassifer model came out with the best results with an accuracy rate of 92.5% and a 7% precision rate and a 91% sensitivity (recall) rate when predicting "High Risk" candidates. The best model to be recommended on performing an analysis like this, then this one would be the clear choice.
